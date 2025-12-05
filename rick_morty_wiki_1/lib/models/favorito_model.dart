@@ -2,13 +2,13 @@ import 'package:hive/hive.dart';
 
 part 'favorito_model.g.dart';
 
-@HiveType(typeId: 1) // ID diferente do usuário
+@HiveType(typeId: 1)
 class Favorito extends HiveObject {
   @HiveField(0)
-  final String emailUsuario; // Isso liga o favorito ao dono dele!
+  final String emailUsuario;
 
   @HiveField(1)
-  final int idPersonagem; // ID que vem da API
+  final int idPersonagem;
 
   @HiveField(2)
   final String nome;
@@ -22,4 +22,5 @@ class Favorito extends HiveObject {
     required this.nome,
     required this.imagemUrl,
   });
+
 }
