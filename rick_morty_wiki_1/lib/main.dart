@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
-import 'package:google_fonts/google_fonts.dart'; // Importe a fonte
+import 'package:google_fonts/google_fonts.dart';
 
 import 'models/usuario_model.dart';
 import 'models/favorito_model.dart';
@@ -32,19 +32,17 @@ class MeuApp extends StatelessWidget {
         title: 'Rick & Morty Wiki',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          // Define o modo escuro como padrão
           brightness: Brightness.dark,
-          scaffoldBackgroundColor: Color(0xFF202329), // Cinza do desenho
-          primaryColor: Color(0xFF97CE4C), // Verde do Portal
+          scaffoldBackgroundColor: Color(0xFF202329),
+          primaryColor: Color(0xFF97CE4C),
 
-          // Configura a fonte global
           textTheme: GoogleFonts.rubikTextTheme(ThemeData.dark().textTheme),
 
           appBarTheme: AppBarTheme(
             backgroundColor: Color(0xFF202329),
             elevation: 0,
             centerTitle: true,
-            titleTextStyle: GoogleFonts.creepster( // Fonte estilo "Terror/Cartoon" para títulos
+            titleTextStyle: GoogleFonts.creepster(
                 fontSize: 28,
                 color: Color(0xFF97CE4C),
                 letterSpacing: 2
@@ -53,7 +51,7 @@ class MeuApp extends StatelessWidget {
 
           colorScheme: ColorScheme.dark(
             primary: Color(0xFF97CE4C),
-            secondary: Color(0xFF00B5CC), // Azul claro do Rick
+            secondary: Color(0xFF00B5CC),
           ),
           useMaterial3: true,
         ),
@@ -61,4 +59,5 @@ class MeuApp extends StatelessWidget {
       ),
     );
   }
+
 }
